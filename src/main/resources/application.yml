@@ -5,8 +5,16 @@ server:
 spring:
   application:
     name: config-server
-  profiles:
-    active: native
-
-
+#  profiles:
+#使用spring.profiles.active=native就会自动搜索resources目录下的文件
+#    active: native
+  cloud:
+    config:
+      server:
+        git:
+          search-paths: /src/main/resouces
+          uri: https://github.com/chenzhehao/config-server.git
+#          uri: https://github.com/isosweet/Config-File.git
+#          username: chenzhehao
+#          password: 1357924680a
 

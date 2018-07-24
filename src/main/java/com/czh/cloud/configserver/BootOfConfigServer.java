@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @version 1.0
  */
 @SpringBootApplication
-@EnableConfigServer
+@EnableConfigServer //添加@EnableConfigServer注解，表明这是一个Config Server端
 @RestController
 public class BootOfConfigServer {
 	public static void main(String[] args) throws Exception {
