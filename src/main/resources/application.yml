@@ -17,3 +17,5 @@ spring:
 #          username: chenzhehao
 #          password: 1357924680a
 
+logging:
+  config: classpath:log4j2.xml
