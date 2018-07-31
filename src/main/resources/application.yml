@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: config-server
+    name: 10000-czh-config-server
 #  profiles:
 #    active: native #使用spring.profiles.active=native就会自动搜索resources目录下的文件
   cloud:
