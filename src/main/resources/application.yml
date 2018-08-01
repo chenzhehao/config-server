@@ -1,10 +1,9 @@
 server:
   port: 10000
 
-
 spring:
   application:
-    name: 10000-czh-config-server
+    name: 10000-czh-config
 #  profiles:
 #    active: native #使用spring.profiles.active=native就会自动搜索resources目录下的文件
   cloud:
@@ -17,5 +16,14 @@ spring:
 #          username: chenzhehao
 #          password: 1357924680a
 
+
 logging:
   config: classpath:log4j2.xml
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10010/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
