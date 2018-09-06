@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.czh.springcloud</groupId>
     <artifactId>config-server</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <parent>
         <groupId>com.czh.springcloud.root</groupId>
         <artifactId>root-server</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
         <relativePath>../root-server/pom.xml</relativePath>
     </parent>
 
@@ -22,6 +22,13 @@
 
 
     <dependencies>
+        <!-- 统一引入common包，common包中包含log4j2的公共配置 begin-->
+        <dependency>
+            <groupId>com.czh.cloud</groupId>
+            <artifactId>cloud-common</artifactId>
+            <version>${com.czh.cloud.cloud-common.version}</version>
+        </dependency>
+        <!-- 统一引入common包，common包中包含log4j2的公共配置 end-->
         <!-- cloud配置管理工具包 begin -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
