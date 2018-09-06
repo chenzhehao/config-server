@@ -3,12 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.czh.springcloud</groupId>
+    <groupId>com.czh.cloud</groupId>
     <artifactId>config-server</artifactId>
     <version>1.0.0</version>
 
     <parent>
-        <groupId>com.czh.springcloud.root</groupId>
+        <groupId>com.czh.cloud.root</groupId>
         <artifactId>root-server</artifactId>
         <version>1.0.0</version>
         <relativePath>../root-server/pom.xml</relativePath>
