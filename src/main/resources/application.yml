@@ -23,9 +23,10 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:10010/eureka/
+      defaultZone: http://127.0.0.1:10010/eureka/
   instance:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
     prefer-ip-address: true
-    status-page-url: http://localhost:10000/swagger-ui.html
+    status-page-url: http://${spring.cloud.client.ip-address}:${server.port}/swagger-ui.html
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
