@@ -26,14 +26,14 @@ public class BootOfConfigServer {
         if (os.contains("windows")) {
             System.setProperty("log.path", "D:/chenzhehao/workspace/czh");
         } else {
-            System.setProperty("log.path", "/opt");
+            System.setProperty("log.path", "/Users/chenzhehao/Documents/springcloud");
         }
         System.setProperty("context.name", "config-server");
 
         SpringApplication.run(BootOfConfigServer.class, args);
     }
 
-    @RequestMapping("test")
+    @RequestMapping("/test")
     public Object test() {
         return "test";
     }
