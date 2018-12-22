@@ -33,8 +33,8 @@ public class BootOfConfigServer {
         SpringApplication.run(BootOfConfigServer.class, args);
     }
 
-    @RequestMapping("/test")
+    @RequestMapping("/")
     public Object test() {
-        return "test";
+        return "success";
     }
 }
